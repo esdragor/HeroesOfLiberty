@@ -38,13 +38,10 @@ protected:
 		void Initialize(TArray<FTypeSoldiers> _Armies, TArray<AActor*> _Spawner);
 
 	UFUNCTION()
-		void SpawnAllSwordmen(int nbUnit, int indexPlayer);
+		void SpawnAllSwordmen(int nbSquadron, int indexPlayer, int nbToSpawn = 100);
 
 	UFUNCTION()
 		void IncSpawners();
 	UFUNCTION(BlueprintImplementableEvent)
 		void RemoveLoader();
-
-	int nbToSpawn = 100;
-
 };
